@@ -1,0 +1,157 @@
+.walpapper{
+    width: 100%;
+    height: 800px;
+    filter: brightness(30%);
+}
+
+.Container{
+    width: 1000px;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+
+.Container h1{
+    color: #ffffff;
+    font-family: "Roboto Light";
+    font-size: 72px;
+}
+
+.Container p{
+    font-family: "Roboto Light";
+    font-size: 33px;
+}
+
+.ant-btn{
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+    height: 55px;
+    padding: 4px 30px;
+    font-size: 20px;
+    border-radius: 15px;
+    background: #E8B227;
+    border: 4px solid black;
+    font-weight: bold;
+}
+
+.iconTam{
+    margin-left: 15px;
+    width: 35px;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.boxImg{
+    border: 4px solid black;
+    border-radius: 150px;
+    width: 700px;
+}
+
+.col h2{
+    font-size: 40px;
+    font-family: Roboto;
+    font-weight: bolder;
+}
+
+.col p{
+    font-size: 24px;
+    font-family: Roboto;
+    padding-left: 122px;
+}
+
+.menuList{
+    list-style: none;
+    font-weight: bold;
+    padding-left: 122px;
+}
+
+.iconlistTam{
+    width: 90px;
+}
+.introductionBody{
+    margin: 25px auto;
+    width: 1000px;
+    font-family: Roboto;
+
+}
+.introductionBody h2{
+    font-size: 42px;
+    font-weight: bolder;
+}
+.introductionBody p{
+    font-size: 24px;
+}
+
+.sectionAbout{
+    margin-right: auto;
+    background-color: #31363A;
+    padding: 45px 40px 55px;
+}
+
+.sectionAbout h2{
+    color: white;
+    font-family: Oswald;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.sectionAbout h3{
+    color: #AF4636;
+    font-family: Roboto;
+    font-weight: lighter;
+    font-size: 35px;
+}
+
+.sectionAbout p{
+    color: white;
+    font-family: Roboto;
+    font-size: 30px;
+}
+
+.sectionBox{
+    border-radius: 15px;
+    background: white;
+    border: 12px solid black;
+    width: 400px;
+    height: 358px;
+}
+
+.sectionBox h3{
+    color: #AF4636;
+    font-size: 50px;
+    font-family: Oswald;
+    font-weight: bold;
+    padding-top: 25px;
+}
+
+.sectionBox l{
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 450;
+    position: relative;
+    top: 15px;
+}
+
+.imgForm{
+    width: 53%;
+    height: 530px;
+}
+
+.sectionForm{
+    padding: 45px 40px 55px;
+}
+
+.formS{
+    padding: 147px 40px 55px;
+}
+
+a {
+    color: black;
+}

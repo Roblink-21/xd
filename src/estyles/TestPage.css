@@ -1,0 +1,49 @@
+.walpapperTest{
+    width: 100%;
+    height: 800px;
+    filter: brightness(30%);
+}
+
+.containerIcon{
+    position: absolute;
+    top: 12%;
+    left: 12%;
+    padding: 36px 40px 55px;
+}
+
+.iconBorder{
+    border-radius: 300px;
+    background: #C8C8C8;
+    border: 7px solid black;
+    height: 530px;
+    width: 550px;
+}
+
+.tamImg{
+    width: 315px;
+    height: 310px;
+    margin-top: 75px;
+}
+
+.textColor{
+    color: white;
+    padding-top: 245px;
+}
+
+.col p{
+    padding: 40px 85px;
+    font-size: 30px;
+}
+
+.infContainer{
+    padding: 40px 25px;
+}
+
+.infContainer h2{
+    font-weight: bold;
+    font-family: Roboto;
+}
+
+.infContainer p{
+    font-size: 20px;
+}
