@@ -1,8 +1,10 @@
 # HearVision
 
-# Integrantes
+## Integrantes
 
-Sebastián Valencia
+- Sebastián Valencia
+
+- Luis Jácome
 
 # Getting Started with Create React App
 
