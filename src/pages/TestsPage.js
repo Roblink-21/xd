@@ -11,16 +11,6 @@ import {NavLink} from "react-router-dom";
 import iconNext from "../imagenes/HomePageIMG/bt1.png";
 
 
-const contentStyle = {
-    position: 'relative',
-    width: '100%',
-    overflow: 'hidden',
-    color: '#fff',
-    lineHeight: '500px',
-    textAlign: 'center',
-    background: '#364d79',
-};
-
 
 const TestPage = () => {
 
@@ -58,13 +48,16 @@ const TestPage = () => {
         if(isLoggedIn===false){
             return(
                 <div>
-                    <h2>A continuacion se presentaran los test que se van a tomar en cuenta para su evaluacion:</h2>
+                    <h2>A continuación se presentaran los test que se van a tomar en cuenta para su evaluación:</h2>
                     <div className="row">
                         <div className="col">
                             <ul>
-                                <li> <a href="#"> Distribucion de objetos y numeros </a> </li>
-                                <li> <a href="#"> Ruido Ambiental </a> </li>
-                                <li> <a href="#"> Frecuencia </a> </li>
+                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                <li> Distribución de objetos y números </li>
+                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                <li> Ruido Ambiental</li>
+                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                <li> Frecuencia </li>
                             </ul>
                         </div>
                     </div>
@@ -74,18 +67,22 @@ const TestPage = () => {
         }
         return (
             <div>
-                <h2>A continuacion se presentaran los test que se van a tomar en cuenta para su evaluacion:</h2>
+                <h2>A continuación se presentaran los test que se van a tomar en cuenta para su evaluación:</h2>
                 <div className="row">
                     <div className="col">
                         <ul>
-                            <li> <a href="#"> Agudeza Visual </a> </li>
-                            <li> <a href="#"> Bicromatico </a> </li>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <li> Agudeza Visual </li>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <li>  Bicromático  </li>
                         </ul>
                     </div>
                     <div className="col">
                         <ul>
-                            <li> <a href="#"> Circulo Horario </a> </li>
-                            <li> <a href="#"> Daltonismo </a> </li>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <li>  Círculo Horario  </li>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <li>  Daltonismo  </li>
                         </ul>
                     </div>
                 </div>
@@ -117,7 +114,7 @@ const TestPage = () => {
                     <div align="center" className="col">
                         <div type="primary" onClick={showModal} className="iconBorder">
                             <img src={imgVI} className="App-logo, tamImg" alt="iconV" />
-                            <p>Vision</p>
+                            <p>Visión</p>
                         </div>
 
                     </div>
@@ -129,7 +126,7 @@ const TestPage = () => {
                     <div align="center" className="col">
                         <div type="primary" onClick={showModal2} className="iconBorder">
                             <img src={imgHI} className="App-logo, tamImg" alt="iconH" />
-                            <p>Audicion</p>
+                            <p>Audición</p>
                         </div>
                     </div>
 
@@ -143,12 +140,12 @@ const TestPage = () => {
 
             <Modal title="Informacion:" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}
                    footer={[
-                       <Button key="back" onClick={handleCancel}>
+                       <Button className="ant_btn_1" key="back" onClick={handleCancel}>
                            Return
                        </Button>,
 
                        <NavLink  to={url} >
-                           <Button >
+                           <Button className="ant_btn_1" >
 
                                Comenzar Tareas
 

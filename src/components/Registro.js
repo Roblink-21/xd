@@ -1,14 +1,14 @@
 
 import React from 'react';
-import { Button, Form, Input, message } from "antd";
+import { Button, Form, Input, message, Select } from "antd";
 
 import {auth, db} from "../firebase";
 
 import '../estyles/registro.css'
 import translateMessage from "../utils/translateMessage";
-import {Link} from "react-router-dom";
 
 import 'react-day-picker/lib/style.css';
+import {Option} from "antd/es/mentions";
 import {formItemLayout, prefixSelector, tailFormItemLayout} from "../utils/formLayout";
 
 
@@ -52,7 +52,7 @@ const Registro = () => {
     return (
 
 
-        <div className="Ho container d-flex justify-content-center">
+        <div className="Ho d-flex justify-content-center">
             <div className=" d-flex container-fluid align-items-center h-90">
                 <div className="container  w-75 mt-5 row rounded col-md-3 ">
                     <div className="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
@@ -61,18 +61,6 @@ const Registro = () => {
                     <div className="card col  col-md-6  ">
                         <div className=" card text-center ">
                             <Form.Item {...tailFormItemLayout}>
-                                <div className="container-login">
-
-                                    <Button  type="primary" htmlType="submit" >
-
-                                        <Link to="/login">Iniciar sesion</Link>
-
-                                    </Button>
-
-                                    <Button type="primary" htmlType="submit" >
-                                        Registro
-                                    </Button>
-                                </div>
 
                                 <h5>Registrate con </h5>
                                 <div className="row">
@@ -204,13 +192,13 @@ const Registro = () => {
                                 <Form.Item
                                     name="gender"
                                     label="Genero "
-                                    rules={[
-                                        {
-                                            required: true, message: 'Ingrese tu genero'
-                                        }
-                                    ]}
+                                    rules={[{ required: true, message: 'Please select gender!' }]}
                                 >
-                                    <Input />
+                                    <Select placeholder="select your gender">
+                                        <Option value="male">Male</Option>
+                                        <Option value="female">Female</Option>
+                                        <Option value="other">Other</Option>
+                                    </Select>
                                 </Form.Item>
 
 

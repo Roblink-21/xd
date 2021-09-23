@@ -30,7 +30,7 @@ const login = () => {
     };
 
     return (
-         <div className="Hola ho container d-flex justify-content-center">
+         <div className="Hola d-flex justify-content-center">
              <div className=" d-flex container-fluid align-items-center h-90 ">
                  <div className="container  w-75 mt-5 row rounded col-md-3 ">
                      <div className="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">

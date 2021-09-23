@@ -1,20 +1,18 @@
 .Ho{
     background-image: url("../imagenes/Group 7.png")  ;
-    height: 100vh;
-    background-repeat: no-repeat;
+    padding: 40px;
 
 }
 
 .Hola{
     background-image: url("../imagenes/Group 5.png") ;
-    height: 100vh;
-    background-repeat: no-repeat;
+    padding: 80px;
 }
 
 
 .card{
     border: none!important;
-    padding: 0.25rem !important;
+    width: 615px;
 }
 
 .facebook{

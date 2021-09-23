@@ -17,7 +17,7 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link, Redirect, useHistory
+    Link, Redirect
 } from "react-router-dom";
 
 import image1 from "../imagenes/Logo.png";
@@ -41,7 +41,6 @@ const { SubMenu } = Menu;
 const { Header, Footer } = Layout;
 
 const MyComponent = () => {
-    const history = useHistory();
 
     const handleLogout = async () => {
         await auth.signOut();
@@ -56,6 +55,7 @@ const MyComponent = () => {
                 // https://firebase.google.com/docs/reference/js/firebase.User
                 const uid = user.uid;
                 console.log("uid", uid);
+                console.log("xd", uid);
                 setAuthUser(user);
             } else {
                 // User is signed out
@@ -82,15 +82,19 @@ const MyComponent = () => {
                         className="main-menu"
                     >
                         <Menu.Item>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
                             <a href="/"/>Inicio
                         </Menu.Item>
                         <Menu.Item>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
                             <a href="#Servicios"/>Servicios
                         </Menu.Item>
                         <Menu.Item>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
                             <a href="#Acerca_Nosotros"/>Acerca de nosotros
                         </Menu.Item>
                         <Menu.Item>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
                             <a href="#Contactos"/>Contactos
                         </Menu.Item>
                         {authUser === null ? null : authUser === false ? (
@@ -108,7 +112,8 @@ const MyComponent = () => {
                                 <SubMenu key="SubMenu" title="Perfil">
                                     <div className="ant-row">
                                         <div className="ant-col-8">
-                                            <img className="profilePhoto" src={Peter}/>
+                                            {/* eslint-disable-next-line jsx-a11y/alt-text */}
+                                            <img className="profilePhoto" src={Peter} alt="perfilImg"/>
                                         </div>
 
                                         <div className="ant-col">
@@ -119,11 +124,13 @@ const MyComponent = () => {
                                     <Divider />
                                     <Menu.Item>
                                         <Link to="/Profile">
-                                            <UserSwitchOutlined />Tu cuenta
+                                            <UserSwitchOutlined/>Tu cuenta
                                         </Link>
                                     </Menu.Item>
                                     <Menu.Item onClick={handleLogout}>
-                                        <LogoutOutlined />Cerrar sesión
+                                        <Link to="/">
+                                            <LogoutOutlined />Cerrar sesión
+                                        </Link>
                                     </Menu.Item>
                                 </SubMenu>
                             </Menu.Item>
@@ -211,7 +218,7 @@ const MyComponent = () => {
                         </div>
 
                         <div align = "center" className="col-12 col-md-3">
-                            <a href="#Inicio">
+                            <a href="/">
                                 <img src={logo} className="App-logo, imgRedonda" alt="logo" />
                             </a>
                         </div>

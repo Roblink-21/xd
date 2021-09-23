@@ -10,8 +10,9 @@
 
 .sectionBut {
     position: absolute;
-    top: 856px;
+    top: 775px;
     left: 1630px;
+    padding: 80px;
 }
 
 .containInst{

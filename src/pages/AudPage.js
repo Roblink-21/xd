@@ -46,9 +46,6 @@ const AudPage = () => {
         volume: volumen
     });
 
-    function onChange(e) {
-        console.log(`checked = ${e.target.checked}`);
-    }
 
     const handleBeforeVol = () => {
         if (volumen > 0) {

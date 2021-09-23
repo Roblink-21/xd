@@ -9,19 +9,23 @@
     text-align: center;
     color: #ffffff;
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 25%;
 }
 
 .Container h1{
     color: #ffffff;
     font-family: "Roboto Light";
-    font-size: 72px;
+    font-size: 75px;
 }
 
 .Container p{
     font-family: "Roboto Light";
     font-size: 33px;
+    margin-top: 65px;
+    margin-bottom: 30px;
+    padding-left: 85px;
+    padding-right: 85px;
 }
 
 .ant_btn_1{
@@ -39,6 +43,7 @@
     background: #E8B227;
     border: 4px solid black;
     font-weight: bold;
+    margin-top: 30px;
 }
 
 .iconTam{
@@ -74,10 +79,11 @@
 
 .iconlistTam{
     width: 90px;
+    margin-right: 40px;
 }
 .introductionBody{
-    margin: 25px auto;
-    width: 1000px;
+    margin: 80px auto;
+width: 1000px;
     font-family: Roboto;
 
 }
@@ -87,6 +93,7 @@
 }
 .introductionBody p{
     font-size: 24px;
+    margin-top: 40px;
 }
 
 .sectionAbout{
@@ -100,6 +107,8 @@
     font-family: Oswald;
     font-weight: bold;
     font-size: 50px;
+    margin-top: 40px;
+margin-bottom: 40px;
 }
 
 .sectionAbout h3{
@@ -107,19 +116,22 @@
     font-family: Roboto;
     font-weight: lighter;
     font-size: 35px;
+    margin-bottom: 40px;
 }
 
 .sectionAbout p{
     color: white;
     font-family: Roboto;
     font-size: 30px;
+    margin-bottom: 40px;
 }
 
 .sectionBox{
-    border-radius: 15px;
-    background: white;
-    border: 12px solid black;
-    width: 400px;
+    margin-top: 40px;
+border-radius: 70px;
+background: white;
+    border: 4px solid black;
+width: 400px;
     height: 358px;
 }
 
@@ -128,7 +140,7 @@
     font-size: 50px;
     font-family: Oswald;
     font-weight: bold;
-    padding-top: 25px;
+    padding-top: 28px;
 }
 
 .sectionBox l{
@@ -140,8 +152,9 @@
 }
 
 .imgForm{
-    width: 53%;
-    height: 530px;
+    width: 70%;
+height: 430px;
+margin-left: 80px;
 }
 
 .sectionForm{
@@ -149,7 +162,36 @@
 }
 
 .formS{
-    padding: 147px 40px 55px;
+    padding: 130px 40px 55px;
+}
+
+.space_contact {
+    margin-top: 40px;
+margin-bottom: 35px;
+}
+
+.element.style {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 300px;
+}
+
+.ant-input {
+    background-color: #C4C4C4;
+}
+
+.ant-input-number-input {
+    background-color: #C4C4C4;
+}
+
+.ant-form-item textarea.ant-input {
+    height: 300px;
+}
+
+.optionsColors {
+    color: #000000;
+    font-size: 25px;
+    font-weight: normal;
 }
 
 a {

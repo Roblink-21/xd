@@ -92,7 +92,7 @@ const VisionPage = () => {
                                     <EyeOutlined/> <l>OJO IZQUIERDO</l>
                                 </div>
                             </div>
-                            <div className="col"></div>
+                            <div className="col"/>
                             <div className="col">
                                 <div className="boxSect">
                                     <l>OJO DERECHO</l> <EyeOutlined/>
@@ -104,14 +104,14 @@ const VisionPage = () => {
                             <div className="col">
 
                                 <ul className="styleUl">
-                                    <li><Checkbox onChange={onChange}></Checkbox></li>
-                                    <li><Checkbox onChange={onChange}></Checkbox></li>
-                                    <li><Checkbox onChange={onChange}></Checkbox></li>
-                                    <li><Checkbox onChange={onChange}></Checkbox></li>
-                                    <li><Checkbox onChange={onChange}></Checkbox></li>
-                                    <li><Checkbox onChange={onChange}></Checkbox></li>
-                                    <li><Checkbox onChange={onChange}></Checkbox></li>
-                                    <li><Checkbox onChange={onChange}></Checkbox></li>
+                                    <li><Checkbox onChange={onChange}/></li>
+                                    <li><Checkbox onChange={onChange}/></li>
+                                    <li><Checkbox onChange={onChange}/></li>
+                                    <li><Checkbox onChange={onChange}/></li>
+                                    <li><Checkbox onChange={onChange}/></li>
+                                    <li><Checkbox onChange={onChange}/></li>
+                                    <li><Checkbox onChange={onChange}/></li>
+                                    <li><Checkbox onChange={onChange}/></li>
                                 </ul>
                             </div>
                             <div className="col">
@@ -119,14 +119,14 @@ const VisionPage = () => {
                             </div>
                             <div className="col">
                                 <ul className="styleUl">
-                                    <li><Checkbox onChange={onChange}></Checkbox></li>
-                                    <li><Checkbox onChange={onChange}></Checkbox></li>
-                                    <li><Checkbox onChange={onChange}></Checkbox></li>
-                                    <li><Checkbox onChange={onChange}></Checkbox></li>
-                                    <li><Checkbox onChange={onChange}></Checkbox></li>
-                                    <li><Checkbox onChange={onChange}></Checkbox></li>
-                                    <li><Checkbox onChange={onChange}></Checkbox></li>
-                                    <li><Checkbox onChange={onChange}></Checkbox></li>
+                                    <li><Checkbox onChange={onChange}/></li>
+                                    <li><Checkbox onChange={onChange}/></li>
+                                    <li><Checkbox onChange={onChange}/></li>
+                                    <li><Checkbox onChange={onChange}/></li>
+                                    <li><Checkbox onChange={onChange}/></li>
+                                    <li><Checkbox onChange={onChange}/></li>
+                                    <li><Checkbox onChange={onChange}/></li>
+                                    <li><Checkbox onChange={onChange}/></li>
                                 </ul>
                             </div>
                         </div>
@@ -159,7 +159,7 @@ const VisionPage = () => {
 
                     <div>
 
-                        <div className="row contentSect">
+                        <div className="row ">
                             <img src={imgTest2} className="App-logo, test1" alt="test2"/>
                         </div>
 
@@ -169,16 +169,16 @@ const VisionPage = () => {
                                     <div className="boxSect">
                                         <EyeOutlined/> <l>OJO IZQUIERDO</l>
                                     </div>
-                                    <div><Checkbox onChange={onChange}></Checkbox> Veo más nítido sobre fondo verde</div>
-                                    <div><Checkbox onChange={onChange}></Checkbox> Veo más nítido sobre fondo rojo</div>
+                                    <div><Checkbox onChange={onChange}/> Veo más nítido sobre fondo verde</div>
+                                    <div><Checkbox onChange={onChange}/> Veo más nítido sobre fondo rojo</div>
                                 </div>
-                                <div className="col-2"></div>
+                                <div className="col-2"/>
                                 <div className="col-3">
                                     <div className="boxSect">
                                         <l>OJO DERECHO</l> <EyeOutlined/>
                                     </div>
-                                    <div><Checkbox onChange={onChange}></Checkbox> Veo más nítido sobre fondo verde</div>
-                                    <div><Checkbox onChange={onChange}></Checkbox> Veo más nítido sobre fondo rojo</div>
+                                    <div><Checkbox onChange={onChange}/> Veo más nítido sobre fondo verde</div>
+                                    <div><Checkbox onChange={onChange}/> Veo más nítido sobre fondo rojo</div>
                                 </div>
                             </div>
 
@@ -210,7 +210,7 @@ const VisionPage = () => {
 
                     <div>
 
-                        <div className="row contentSect">
+                        <div className="row ">
                             <img src={imgTest3} className="App-logo, test1" alt="test3"/>
                         </div>
 
@@ -220,16 +220,16 @@ const VisionPage = () => {
                                     <div className="boxSect">
                                         <EyeOutlined/> <l>OJO IZQUIERDO</l>
                                     </div>
-                                    <div><Checkbox onChange={onChange}></Checkbox> Sí, visualizo algunas líneas más nítidas.</div>
-                                    <div><Checkbox onChange={onChange}></Checkbox> No, visualizo todas las líneas con la misma nitidez.</div>
+                                    <div><Checkbox onChange={onChange}/> Sí, visualizo algunas líneas más nítidas.</div>
+                                    <div><Checkbox onChange={onChange}/> No, visualizo todas las líneas con la misma nitidez.</div>
                                 </div>
-                                <div className="col-2"></div>
+                                <div className="col-2"/>
                                 <div className="col-3">
                                     <div className="boxSect">
                                         <l>OJO DERECHO</l> <EyeOutlined/>
                                     </div>
-                                    <div><Checkbox onChange={onChange}></Checkbox> Sí, visualizo algunas líneas más nítidas.</div>
-                                    <div><Checkbox onChange={onChange}></Checkbox> No, visualizo todas las líneas con la misma nitidez</div>
+                                    <div><Checkbox onChange={onChange}/> Sí, visualizo algunas líneas más nítidas.</div>
+                                    <div><Checkbox onChange={onChange}/> No, visualizo todas las líneas con la misma nitidez</div>
                                 </div>
                             </div>
 
@@ -261,7 +261,7 @@ const VisionPage = () => {
 
                     <div>
 
-                        <div className="row contentSect">
+                        <div className="row ">
                             <img src={imgTest4} className="App-logo, test1" alt="test4"/>
                         </div>
 
@@ -307,10 +307,6 @@ const VisionPage = () => {
 
     const next = () => {
         setCurrent(current + 1);
-    };
-
-    const prev = () => {
-        setCurrent(current - 1);
     };
 
     return (
