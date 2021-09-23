@@ -1,12 +1,12 @@
 .Ho{
-    background-image: url("./imagenes/Group 7.png")  ;
+    background-image: url("../imagenes/Group 7.png")  ;
     height: 100vh;
     background-repeat: no-repeat;
 
 }
 
 .Hola{
-    background-image: url("./imagenes/Group 5.png") ;
+    background-image: url("../imagenes/Group 5.png") ;
     height: 100vh;
     background-repeat: no-repeat;
 }
@@ -15,4 +15,9 @@
 .card{
     border: none!important;
     padding: 0.25rem !important;
+}
+
+.facebook{
+    background-color: red;
+
 }

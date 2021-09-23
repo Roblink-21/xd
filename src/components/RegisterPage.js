@@ -1,17 +1,11 @@
 import React from 'react';
-import {Button} from "bootstrap";
 import {
     Form,
     Input,
-    InputNumber,
-    Cascader,
-    Select,
-    Row,
-    Col,
-    Checkbox,
-    AutoComplete,
-} from 'antd';
+    Button,
 
+} from 'antd';
+import 'react-day-picker/lib/style.css';
 const formItemLayout = {
     labelCol: {
         xs: { span: 24 },
@@ -36,11 +30,14 @@ const tailFormItemLayout = {
 };
 
 const RegisterPage = () => {
-    const onFinish = () => {};
+
     const [form]=Form.useForm();
+    const onFinish = (values) => {
+        console.log('values',values);
+    };
 
     return (
-        <div>
+        <div >
             <Form
                 {...formItemLayout}
                 form={form}
@@ -112,14 +109,16 @@ const RegisterPage = () => {
                     ]}
                 >
                     <Input.Password />
-                </Form.Item>
+                </Form.Item><br/>
 
+                <div >
+                    <Form.Item {...tailFormItemLayout}>
+                        <Button type="primary" htmlType="submit">
+                            Registrarme
+                        </Button>
+                    </Form.Item>
+                </div>
 
-                <Form.Item {...tailFormItemLayout}>
-                    <Button type="primary" htmlType="submit">
-                        Registrarme
-                    </Button>
-                </Form.Item>
             </Form>
 
         </div>
@@ -127,4 +126,3 @@ const RegisterPage = () => {
 };
 
 export default RegisterPage;
-;

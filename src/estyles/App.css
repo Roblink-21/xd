@@ -1,6 +1,61 @@
+@import '~antd/dist/antd.css';
 .App{
    background-image: url("../imagenes/Group 5.png") ;
     background-repeat: no-repeat;
     height: 100vh;
 
+}
+
+.ant-layout-header {
+    height: 72px;
+}
+
+.main-header {
+    display: flex;
+    background-color:#212529;
+
+}
+.ant-layout-footer{
+    background-color:#212529;
+}
+.box{
+    color:#FFFCFC;
+    border-right: 1px solid #ccc;
+    opacity: 0.7;
+    font-family: "Rage Italic";
+}
+
+.box h2{
+    color:#FFFCFC;
+    font-size: 25px;
+    font-family: "Rage Italic";
+}
+
+.box div{
+    margin-left: 40px;
+}
+
+.logo {
+    color: #ffffff;
+}
+
+.ant-menu.ant-menu-dark{
+    background-color:#212529;
+
+}
+.ant-menu.ant-menu-dark .ant-menu-item-selected{
+    background-color:#212529;
+}
+
+
+.main-menu {
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.imgRedonda {
+    border: 4px solid black;
+    border-radius: 150px;
+    text-align: center;
+    width: 300px;
 }

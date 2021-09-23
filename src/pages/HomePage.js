@@ -1,24 +1,22 @@
 import React from "react";
-import {Button, Carousel, Form, Input, InputNumber, Menu} from 'antd';
-import img1 from '../images/HomePageIMG/1.jpg';
-import img2 from '../images/HomePageIMG/1_1.png';
-import img3 from '../images/HomePageIMG/1_2.jpg';
-import img4 from '../images/HomePageIMG/1_3.jpg';
-import iconNext from '../images/HomePageIMG/bt1.png';
-import iconVision from '../images/HomePageIMG/2.jpg';
-import iconlist1 from '../images/HomePageIMG/2_1.png';
-import iconlist2 from '../images/HomePageIMG/2_2.png';
-import iconlist3 from '../images/HomePageIMG/2_3.png';
-import iconlist4 from '../images/HomePageIMG/2_4.png';
-import iconHear from '../images/HomePageIMG/3.jpg';
-import iconlist5 from '../images/HomePageIMG/3_1.png';
-import iconlist6 from '../images/HomePageIMG/3_2.png';
-import iconlist7 from '../images/HomePageIMG/3_3.png';
-import iconForm from '../images/HomePageIMG/4.jpg'
-import TestPage from "../pages/TestsPage";
-import "../styles/HomePage.css";
-import {auth} from "../firebase";
-import {Link} from "react-router-dom";
+import {Button, Carousel, Form, Input, InputNumber} from 'antd';
+import img1 from '../imagenes/HomePageIMG/1.jpg';
+import img2 from '../imagenes/HomePageIMG/1_1.png';
+import img3 from '../imagenes/HomePageIMG/1_2.jpg';
+import img4 from '../imagenes/HomePageIMG/1_3.jpg';
+import iconNext from '../imagenes/HomePageIMG/bt1.png';
+import iconVision from '../imagenes/HomePageIMG/2.jpg';
+import iconlist1 from '../imagenes/HomePageIMG/2_1.png';
+import iconlist2 from '../imagenes/HomePageIMG/2_2.png';
+import iconlist3 from '../imagenes/HomePageIMG/2_3.png';
+import iconlist4 from '../imagenes/HomePageIMG/2_4.png';
+import iconHear from '../imagenes/HomePageIMG/3.jpg';
+import iconlist5 from '../imagenes/HomePageIMG/3_1.png';
+import iconlist6 from '../imagenes/HomePageIMG/3_2.png';
+import iconlist7 from '../imagenes/HomePageIMG/3_3.png';
+import iconForm from '../imagenes/HomePageIMG/4.jpg'
+import "../estyles/HomePage.css";
+
 
 import { NavLink } from 'react-router-dom'
 
@@ -29,12 +27,16 @@ const layout = {
 };
 
 const validateMessages = {
+    // eslint-disable-next-line no-template-curly-in-string
     required: '${label} is required!',
     types: {
+        // eslint-disable-next-line no-template-curly-in-string
         email: '${label} is not a valid email!',
+        // eslint-disable-next-line no-template-curly-in-string
         number: '${label} is not a valid number!',
     },
     number: {
+        // eslint-disable-next-line no-template-curly-in-string
         range: '${label} must be between ${min} and ${max}',
     },
 };
@@ -44,19 +46,7 @@ const onFinish = (values: any) => {
         console.log(values);
         };
 
-const contentStyle = {
-    position: 'relative',
-    width: '100%',
-    overflow: 'hidden',
-    color: '#fff',
-    lineHeight: '500px',
-    textAlign: 'center',
-    background: '#364d79',
-};
-
-
-
-
+// eslint-disable-next-line no-unused-vars
 const HomePage = () => {
     return <div>
         <Carousel autoplay>
@@ -93,9 +83,13 @@ const HomePage = () => {
                     <h2 align="center">Que es un Test Visual?</h2>
                     <p>El test visual es una prueba optométrica sencilla y nada invasiva destinada a medir la agudeza visual. Nos permite hacer una evaluación de la capacidad del sistema visual.</p>
                     <ul className="menuList">
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <li><a href="#"> <img src={iconlist1} className="App-logo, iconlistTam" alt="iconlist1" /> Agudeza Visual </a></li>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <li><a href="#"> <img src={iconlist2} className="App-logo, iconlistTam" alt="iconlist2" /> Bicromatico </a></li>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <li><a href="#"> <img src={iconlist3} className="App-logo, iconlistTam" alt="iconlist3" /> Circulo Horario </a></li>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <li><a href="#"> <img src={iconlist4} className="App-logo, iconlistTam" alt="iconlist4" /> Daltonismo </a></li>
 
                     </ul>
@@ -107,10 +101,13 @@ const HomePage = () => {
                     <h2 align="center">¿Qué es un test Auditivo?</h2>
                     <p>Las pruebas de audición miden que tan bien usted oye. Cuando una persona tiene audición normal, las ondas sonoras viajan por el oído y hacen que el tímpano vibre. Esta vibración envía las ondas sonoras hacia el interior del oído para que las células nerviosas envíen la información del sonido al cerebro.</p>
                     <ul className="menuList">
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <li><a href="#"> <img src={iconlist5} className="App-logo, iconlistTam"
                                               alt="iconlist5"/> Seleccion de Objetos </a></li>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <li><a href="#"> <img src={iconlist6} className="App-logo, iconlistTam"
                                               alt="iconlist6"/> Ruido Ambiental </a></li>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <li><a href="#"> <img src={iconlist7} className="App-logo, iconlistTam"
                                               alt="iconlist7"/> Frecuencia </a></li>
 

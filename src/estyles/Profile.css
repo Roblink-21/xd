@@ -1,0 +1,65 @@
+.tamH1 {
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+
+.separ {
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.ant-col-12{
+    margin-top: 40px;
+}
+
+.ant-descriptions-item-content{
+    font-size: 22px;
+}
+
+.anticon-user-switch {
+    width: 30px;
+}
+
+.anticon-setting {
+    width: 30px;
+}
+
+.anticon-logout {
+    width: 30px;
+}
+
+.anticon-user{
+    width: 80px;
+    font-size: 50px;
+}
+
+.anticon-heart{
+    width: 80px;
+    font-size: 50px;
+}
+
+.anticon-clock-circle{
+    width: 80px;
+    font-size: 50px;
+}
+
+.anticon-phone{
+    width: 80px;
+    font-size: 50px;
+}
+
+.anticon-message{
+    width: 80px;
+    font-size: 50px;
+}
+
+.tam {
+    width: 60px;
+    height: 60px;
+}
+
+.ant-descriptions-item-container .ant-descriptions-item-label, .ant-descriptions-item-container .ant-descriptions-item-content {
+    display: inline-flex;
+    align-items: center;
+}

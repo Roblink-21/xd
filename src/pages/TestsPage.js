@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import {Carousel, Modal, Button} from "antd";
-import img1 from "../images/TestPage/1.jpg";
-import img2 from "../images/TestPage/1_1.jpg";
-import img3 from "../images/TestPage/1_2.jpg";
-import img4 from "../images/TestPage/1_3.jpg";
-import imgVI from "../images/TestPage/iconV.png";
-import imgHI from "../images/TestPage/iconH.png";
-import "../styles/TestPage.css";
-import {Link, NavLink, Redirect} from "react-router-dom";
-import iconNext from "../images/HomePageIMG/bt1.png";
+import img1 from "../imagenes/TestPage/1.jpg";
+import img2 from "../imagenes/TestPage/1_1.jpg";
+import img3 from "../imagenes/TestPage/1_2.jpg";
+import img4 from "../imagenes/TestPage/1_3.jpg";
+import imgVI from "../imagenes/TestPage/iconV.png";
+import imgHI from "../imagenes/TestPage/iconH.png";
+import "../estyles/TestPage.css";
+import {NavLink} from "react-router-dom";
+import iconNext from "../imagenes/HomePageIMG/bt1.png";
+
 
 const contentStyle = {
     position: 'relative',
@@ -27,10 +28,13 @@ const TestPage = () => {
 
     const [isLoggedIn, setisLoggedIn] = useState(false);
 
+    const [url, setUrl] = useState("/netflix")
+
 
     const showModal = () => {
         setIsModalVisible(true);
         setisLoggedIn(true);
+        setUrl("/vision")
     };
 
     const showModal2 = () => {
@@ -45,7 +49,10 @@ const TestPage = () => {
     const handleCancel = () => {
         setIsModalVisible(false);
         setisLoggedIn(false);
+        setUrl("/netflix")
     };
+
+
 
     function checkResponse(isLoggedIn){
         if(isLoggedIn===false){
@@ -68,24 +75,26 @@ const TestPage = () => {
         return (
             <div>
                 <h2>A continuacion se presentaran los test que se van a tomar en cuenta para su evaluacion:</h2>
-               <div className="row">
-                   <div className="col">
-                       <ul>
-                           <li> <a href="#"> Agudeza Visual </a> </li>
-                           <li> <a href="#"> Bicromatico </a> </li>
-                       </ul>
-                   </div>
-                   <div className="col">
-                       <ul>
-                           <li> <a href="#"> Circulo Horario </a> </li>
-                           <li> <a href="#"> Daltonismo </a> </li>
-                       </ul>
-                   </div>
-               </div>
+                <div className="row">
+                    <div className="col">
+                        <ul>
+                            <li> <a href="#"> Agudeza Visual </a> </li>
+                            <li> <a href="#"> Bicromatico </a> </li>
+                        </ul>
+                    </div>
+                    <div className="col">
+                        <ul>
+                            <li> <a href="#"> Circulo Horario </a> </li>
+                            <li> <a href="#"> Daltonismo </a> </li>
+                        </ul>
+                    </div>
+                </div>
 
             </div>
         );
     }
+
+
 
     return (
         <div>
@@ -137,7 +146,17 @@ const TestPage = () => {
                        <Button key="back" onClick={handleCancel}>
                            Return
                        </Button>,
-                       <Button ><NavLink to="/VisioTest"> Comenzar Tareas </NavLink><img src={iconNext} className="App-logo, iconTam" alt="iconBtt" /></Button>
+
+                       <NavLink  to={url} >
+                           <Button >
+
+                               Comenzar Tareas
+
+
+                               <img src={iconNext} className="App-logo, iconTam" alt="iconBtt" />
+                           </Button>
+                       </NavLink>,
+
 
                    ]}>
 

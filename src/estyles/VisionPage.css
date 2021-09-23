@@ -1,0 +1,76 @@
+
+.scale {
+    width: 310px;
+    height: 255px;
+}
+
+.backg{
+    background: gainsboro;
+}
+
+.sectionBut {
+    position: absolute;
+    top: 856px;
+    left: 1630px;
+}
+
+.containInst{
+    background: #C4C4C4;
+    border-radius: 45px;
+    padding: 25px;
+    margin: 54px;
+    width: 1410px;
+    align-items: center;
+}
+
+.containPass{
+    background: white;
+    border-radius: 66px;
+    height: 261px;
+    padding: 22px;
+}
+
+.tamLet{
+    font-size: 32px;
+    font-family: Oswald;
+}
+
+.test1{
+    width: 548px;
+    height: 480px;
+}
+
+.boxSect{
+    border: 1px solid black;
+    background: #AF4636;
+    padding: 10px;
+    border-radius: 16px;
+    font-size: 16px;
+    font-weight: 800;
+
+}
+
+.contentSpac{
+    padding: 145px;
+}
+
+.contentSpac2{
+    padding-left: 55px;
+    padding-top: 425px;
+}
+
+.contentSect{
+    padding: 35px;
+}
+.contentSect{
+    padding: 10px;
+}
+
+.styleUl{
+    list-style: none;
+    padding: 10px;
+}
+
+.styleUl li{
+    padding: 19px;
+}
