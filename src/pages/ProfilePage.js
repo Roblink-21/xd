@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { db, storage } from "../firebase";
-import {Button, Descriptions, Form,message, Image, Progress, Upload} from "antd";
+import {Button, Descriptions, Form, Image, Progress, Upload} from "antd";
 import {MessageOutlined, PhoneOutlined, UploadOutlined} from "@ant-design/icons";
 import firebase from "firebase";
 
@@ -17,26 +17,8 @@ import {
 import {Content} from "antd/es/layout/layout";
 
 
+
 // eslint-disable-next-line no-unused-vars
-const props = {
-  name: "file",
-  headers: {
-    authorization: "authorization-text",
-  },
-  onChange(info) {
-    if (info.file.status !== "uploading") {
-      console.log(info.file, info.fileList);
-    }
-    if (info.file.status === "done") {
-      message.success(`${info.file.name} file uploaded successfully`);
-    } else if (info.file.status === "error") {
-      message.error(`${info.file.name} file upload failed.`);
-    }
-  },
-};
-
-
-
 const ProfilePage = ({ userId }) => {
   const [form] = Form.useForm();
   const [loading, setLoading] = useState(false);
