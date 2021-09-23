@@ -28,7 +28,7 @@ const TestPage = () => {
 
     const [isLoggedIn, setisLoggedIn] = useState(false);
 
-    const [url, setUrl] = useState("/netflix")
+    const [url, setUrl] = useState("/audio")
 
 
     const showModal = () => {
@@ -49,7 +49,7 @@ const TestPage = () => {
     const handleCancel = () => {
         setIsModalVisible(false);
         setisLoggedIn(false);
-        setUrl("/netflix")
+        setUrl("/audio")
     };
 
 
@@ -117,7 +117,7 @@ const TestPage = () => {
                     <div align="center" className="col">
                         <div type="primary" onClick={showModal} className="iconBorder">
                             <img src={imgVI} className="App-logo, tamImg" alt="iconV" />
-                            <p>Audicion</p>
+                            <p>Vision</p>
                         </div>
 
                     </div>
@@ -129,7 +129,7 @@ const TestPage = () => {
                     <div align="center" className="col">
                         <div type="primary" onClick={showModal2} className="iconBorder">
                             <img src={imgHI} className="App-logo, tamImg" alt="iconH" />
-                            <p>Vision</p>
+                            <p>Audicion</p>
                         </div>
                     </div>
 

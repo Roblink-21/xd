@@ -1,6 +1,6 @@
 @import '~antd/dist/antd.css';
 .App{
-   background-image: url("../imagenes/Group 5.png") ;
+    background-image: url("../imagenes/Group 5.png") ;
     background-repeat: no-repeat;
     height: 100vh;
 
@@ -41,7 +41,7 @@
 
 .ant-menu.ant-menu-dark{
     background-color:#212529;
-
+    font-size: 20px;
 }
 .ant-menu.ant-menu-dark .ant-menu-item-selected{
     background-color:#212529;
@@ -58,4 +58,29 @@
     border-radius: 150px;
     text-align: center;
     width: 300px;
+}
+
+.ant-menu-sub, .ant-menu.ant-menu-dark .ant-menu-sub {
+    color: #ffffff;
+    background: #212529;
+    width: 350px;
+}
+
+.ant-descriptions-item-content{
+    font-size: 22px;
+}
+
+.profilePhoto {
+    width: 70px;
+    margin: 15px 10px 5px 30px;
+    border-radius: 100%;
+}
+
+.space-profile {
+    margin: 10px 2px 20px 10px;
+    color: #ffffff;
+}
+
+.ant-divider {
+    background-color: white;
 }

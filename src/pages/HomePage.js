@@ -43,35 +43,35 @@ const validateMessages = {
 
 
 const onFinish = (values: any) => {
-        console.log(values);
-        };
+    console.log(values);
+};
 
 // eslint-disable-next-line no-unused-vars
 const HomePage = () => {
     return <div>
         <Carousel autoplay>
-        <div>
-            <img src={img1} className="App-logo, walpapper" alt="fond1" />
-        </div>
-        <div>
-            <img src={img2} className="App-logo, walpapper" alt="fond2" />
-        </div>
-        <div>
-            <img src={img3} className="App-logo, walpapper" alt="fond3" />
-        </div>
-        <div>
-            <img src={img4} className="App-logo, walpapper" alt="fond4" />
-        </div>
-    </Carousel>,
+            <div>
+                <img src={img1} className="App-logo, walpapper" alt="fond1" />
+            </div>
+            <div>
+                <img src={img2} className="App-logo, walpapper" alt="fond2" />
+            </div>
+            <div>
+                <img src={img3} className="App-logo, walpapper" alt="fond3" />
+            </div>
+            <div>
+                <img src={img4} className="App-logo, walpapper" alt="fond4" />
+            </div>
+        </Carousel>,
         <div className="Container">
-            <h1>Bienvenido a los tests visuales y auditivos de HearVision</h1>
+            <h1 id="Inicio">Bienvenido a los tests visuales y auditivos de HearVision</h1>
             <p>Estas pruebas miden el estado de la visión y audición del usuario, con el fin de detectar y prevenir a tiempo alguna complicacion en su calidad de vida.</p>
-            <Button ><NavLink to="/test"> Comenzar Test </NavLink><img src={iconNext} className="App-logo, iconTam" alt="iconBtt" /></Button>
+            <button className="ant_btn_1"><NavLink to="/test"> Comenzar Test </NavLink><img src={iconNext} className="App-logo, iconTam" alt="iconBtt" /></button>
 
         </div>
         <div align = "center" className="introductionBody">
-        <h2>Nosotros buscamos ayudar a la gente a sentirse mejor a través de un diagnóstico online</h2>
-        <p>Durante este periodo de confinamiento se puso en evidencia nuestro sistema de salud. Lo cual generó un descuido a ciertos sentidos vitales, como el oído y nuestra agudeza visual.</p>
+            <h2 id="Servicios">Nosotros buscamos ayudar a la gente a sentirse mejor a través de un diagnóstico online</h2>
+            <p>Durante este periodo de confinamiento se puso en evidencia nuestro sistema de salud. Lo cual generó un descuido a ciertos sentidos vitales, como el oído y nuestra agudeza visual.</p>
         </div>
         <div className="row gy-5">
 
@@ -121,30 +121,30 @@ const HomePage = () => {
         </div>;
 
         <div className="sectionAbout">
-            <h2>Acerca de Nosotros</h2>
+            <h2  id="Acerca_Nosotros">Acerca de Nosotros</h2>
             <h3>"Brindamos un servicios de exelencia y calidad</h3>
 
             <p>Somos una red independiente que buscamos brindar atención a todo el público, brindamos servicios integrales de salud a traves de nuestros test.</p>
             <p>Nuestro objetivo es elevar la calidad de vida a través del cuidado y  prevención de la salud visual y auditiva.</p>
             <div align="center" className="row">
-            <div className="col">
-                <div className="sectionBox">
-                <h3>Misión</h3>
-                    <l>Ocuparnos del cuidado de la salud visual y auditiva de las personas, somos un equipo con vocacion y servicio.</l>
+                <div className="col">
+                    <div className="sectionBox">
+                        <h3>Misión</h3>
+                        <l>Ocuparnos del cuidado de la salud visual y auditiva de las personas, somos un equipo con vocacion y servicio.</l>
+                    </div>
                 </div>
+                <div className="col">
+                    <div className="sectionBox">
+                        <h3>Visión</h3>
+                        <l>Ser una de las mejores plataformas para la salud visual y auditiva.</l>
+                    </div>
                 </div>
-            <div className="col">
-                <div className="sectionBox">
-                    <h3>Visión</h3>
-                    <l>Ser una de las mejores plataformas para la salud visual y auditiva.</l>
-                </div>
-            </div>
             </div>
 
         </div>
         <div className="row sectionForm">
             <div align="center" className="col-5">
-                <h2>¿Cómo podemos ayudarte?</h2>
+                <h2 id="Contactos">¿Cómo podemos ayudarte?</h2>
                 <h3>No lo dudes más, contacta con nosotros.</h3>
                 <img src={iconForm} className="App-logo, imgForm" alt="fondForm" />
             </div>

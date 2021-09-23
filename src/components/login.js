@@ -21,7 +21,7 @@ const login = () => {
             // Signed in
             const user = userCredential.user;
             console.log("user", user);
-            history.push("/Servicios");
+            history.push("/");
         } catch (error) {
             const errorCode = error.code;
             console.log("errorCode", errorCode);
@@ -84,7 +84,7 @@ const login = () => {
 
                         <Form.Item>
                             ¿Aún no tienes una cuenta?{" "}
-                            <Link to="/Registr">Regístrate ahora!</Link>
+                            <Link to="/Register">Regístrate ahora!</Link>
                         </Form.Item>
                     </Form>
 

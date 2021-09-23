@@ -24,7 +24,7 @@
     font-size: 33px;
 }
 
-.ant-btn{
+.ant_btn_1{
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
     -webkit-user-select: none;

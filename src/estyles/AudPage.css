@@ -1,0 +1,53 @@
+.contCol{
+    padding: 52px;
+}
+
+.bordImg{
+    padding-top: 200px;
+}
+
+.ImgRadius{
+    border-radius: 100px;
+}
+
+.bordBd{
+    padding-top: 330px;
+}
+
+.contBack{
+    background-image: url("../imagenes/card.png");
+    background-size: 100% 100%;
+    padding: 141px 55px 14px 30px;
+}
+
+.contentSpac{
+    padding: 145px;
+}
+
+.contentSpac2{
+    padding-left: 55px;
+    padding-top: 305px;
+}
+
+.iconT{
+    width: 110px;
+}
+
+.sizeT h3{
+    font-size: 28px;
+}
+
+.butPosit{
+    position: relative;
+    left: 1660px;
+    bottom: 290px;
+}
+
+.iconPlay{
+    width: 310px;
+}
+
+.iconT2{
+    padding-top: 185px;
+    width: 110px;
+}

@@ -10,6 +10,7 @@ import "../estyles/VisionPage.css";
 import { EyeOutlined } from '@ant-design/icons';
 import { Checkbox } from 'antd';
 import InputNumber from 'react-input-number';
+import {NavLink} from "react-router-dom";
 
 const VisionPage = () => {
 
@@ -328,7 +329,7 @@ const VisionPage = () => {
                 )}
                 {current === steps.length - 1 && (
                     <Button type="primary" onClick={() => message.success('Processing complete!')}>
-                        Terminar
+                        <NavLink to="/ResultV"> Terminar </NavLink>
                     </Button>
                 )}
             </div>

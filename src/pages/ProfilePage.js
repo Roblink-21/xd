@@ -38,7 +38,7 @@ const props = {
 function ProfilePage() {
   return (
     <Router>
-      <Link to="/Profile"></Link>
+      <Link to="/Profile"/>
       <Layout>
         <Content className="separ" style={{ padding: "0 50px" }}>
           <div className="ant-row">

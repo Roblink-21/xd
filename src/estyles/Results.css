@@ -1,0 +1,20 @@
+.site-card-border-less-wrapper {
+  padding: 30px;
+  background: #ececec;
+  width: 60%;
+}
+
+.site-card-wrapper {
+  padding: 30px;
+  background: #ececec;
+  padding-top: 20px;
+}
+
+.col {
+  padding-top: 20px;
+}
+
+.Botton {
+  padding-left: 70%;
+  padding-top: 20px;
+}
